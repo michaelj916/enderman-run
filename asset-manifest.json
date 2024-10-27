@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/enderman-run/static/css/main.ee3d326a.css",
+    "main.js": "/enderman-run/static/js/main.f0055ab9.js",
+    "static/js/453.ebab3f66.chunk.js": "/enderman-run/static/js/453.ebab3f66.chunk.js",
+    "static/media/CCOverbyteOffW00-Regular.ttf": "/enderman-run/static/media/CCOverbyteOffW00-Regular.e0b14a2c1b571c44d49f.ttf",
+    "static/media/enderman.webp": "/enderman-run/static/media/enderman.3cea6f36b61dfe8c382a.webp",
+    "static/media/pearl.webp": "/enderman-run/static/media/pearl.15097866be9fe9ee5b67.webp",
+    "index.html": "/enderman-run/index.html",
+    "main.ee3d326a.css.map": "/enderman-run/static/css/main.ee3d326a.css.map",
+    "main.f0055ab9.js.map": "/enderman-run/static/js/main.f0055ab9.js.map",
+    "453.ebab3f66.chunk.js.map": "/enderman-run/static/js/453.ebab3f66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee3d326a.css",
+    "static/js/main.f0055ab9.js"
+  ]
+}
