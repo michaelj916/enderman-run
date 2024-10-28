@@ -56,6 +56,15 @@ class GameScene extends Phaser.Scene {
 
     this.enderman = this.physics.add.sprite(50, 50, 'enderman');
     this.enderman.setCollideWorldBounds(true);
+    // Adjust hitbox size to be 80% of the sprite's size
+    const endermanWidth = this.enderman.width * 0.8;
+    const endermanHeight = this.enderman.height * 0.8;
+    this.enderman.body.setSize(endermanWidth, endermanHeight);
+    // Center the hitbox
+    this.enderman.body.setOffset(
+        (this.enderman.width - endermanWidth) / 2,
+        (this.enderman.height - endermanHeight) / 2
+    );
     this.pearls = this.physics.add.group();
     this.gameOver = false;
     this.startTime = Date.now();
@@ -119,6 +128,15 @@ class GameScene extends Phaser.Scene {
   
     const pearl = this.pearls.create(this.sys.game.config.width, Math.random() * this.sys.game.config.height, 'pearl');
     pearl.setScale(0.5);
+    // Adjust hitbox size to be 60% of the scaled pearl size
+    const pearlWidth = pearl.width * 0.6;
+    const pearlHeight = pearl.height * 0.6;
+    pearl.body.setSize(pearlWidth, pearlHeight);
+    // Center the hitbox
+    pearl.body.setOffset(
+        (pearl.width - pearlWidth) / 2,
+        (pearl.height - pearlHeight) / 2
+    );
   
     // Calculate direction vector towards the enderman
     const directionX = this.enderman.x - pearl.x;
